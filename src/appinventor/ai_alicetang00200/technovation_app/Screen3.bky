@@ -1,0 +1,124 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="1" x="85" y="-229">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="2" inline="false">
+        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image1</field>
+        <field name="PROP">Picture</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="3">
+            <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image5"></mutation>
+            <field name="COMPONENT_SELECTOR">Image5</field>
+            <field name="PROP">Picture</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="4" inline="false">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="5">
+                <field name="TEXT">image</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="6">
+                <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image5"></mutation>
+                <field name="COMPONENT_SELECTOR">Image5</field>
+                <field name="PROP">Picture</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="7" x="95" y="-86">
+    <mutation component_type="Button" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="component_set_get" id="8" inline="false">
+        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image2"></mutation>
+        <field name="COMPONENT_SELECTOR">Image2</field>
+        <field name="PROP">Picture</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="9">
+            <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image6"></mutation>
+            <field name="COMPONENT_SELECTOR">Image6</field>
+            <field name="PROP">Picture</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="10" inline="false">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="11">
+                <field name="TEXT">image</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="12">
+                <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image6"></mutation>
+                <field name="COMPONENT_SELECTOR">Image6</field>
+                <field name="PROP">Picture</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="13" x="560" y="-1">
+    <mutation component_type="Form" instance_name="Screen3" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen3</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="14" inline="false">
+        <value name="SCREEN">
+          <block type="text" id="15">
+            <field name="TEXT">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="16" x="81" y="63">
+    <mutation component_type="Button" instance_name="Button3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button3</field>
+    <statement name="DO">
+      <block type="component_set_get" id="17" inline="false">
+        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image3"></mutation>
+        <field name="COMPONENT_SELECTOR">Image3</field>
+        <field name="PROP">Picture</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="18">
+            <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image7"></mutation>
+            <field name="COMPONENT_SELECTOR">Image7</field>
+            <field name="PROP">Picture</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="19" inline="false">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="20">
+                <field name="TEXT">image</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="21">
+                <mutation component_type="Image" set_or_get="get" property_name="Picture" is_generic="false" instance_name="Image7"></mutation>
+                <field name="COMPONENT_SELECTOR">Image7</field>
+                <field name="PROP">Picture</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="123" language-version="18"></yacodeblocks>
+</xml>
